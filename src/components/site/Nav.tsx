@@ -28,8 +28,8 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-        <a href="#top" className="flex items-center gap-2">
-          <Logo className="h-10 w-auto md:h-12" />
+        <a href="#top" className="flex items-center">
+          <Logo />
         </a>
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
