@@ -24,8 +24,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Urban Vibes Space — A Space to Connect & Celebrate | Bhubaneswar" },
       { name: "description", content: "Bhubaneswar's modern venue for meetings, workshops, networking events, photoshoots & community gatherings. 20 & 40 seater spaces. Hourly & daily bookings." },
-      { property: "og:title", content: "Urban Vibes Space — A Space to Connect & Celebrate" },
-      { property: "og:description", content: "Modern event venue in Bhubaneswar. Book by the hour or day." },
+      { property: "og:title", content: "Urban Vibes Space — A Space to Connect & Celebrate | Bhubaneswar" },
+      { property: "og:description", content: "Bhubaneswar's modern venue for meetings, workshops, networking events, photoshoots & community gatherings. 20 & 40 seater spaces. Hourly & daily bookings." },
     ],
   }),
   component: Index,
