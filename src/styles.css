@@ -42,13 +42,15 @@
 :root {
   --radius: 1rem;
 
-  /* Brand */
-  --orange: oklch(0.72 0.18 50);            /* #F58220 */
+  /* Brand — green primary (#34C759) with orange accents */
+  --green: oklch(0.78 0.19 150);             /* #34C759 */
+  --green-glow: oklch(0.84 0.17 150);
+  --green-deep: oklch(0.58 0.16 150);
+  --orange: oklch(0.72 0.18 50);             /* accent */
   --orange-glow: oklch(0.78 0.16 55);
-  --green: oklch(0.65 0.10 155);             /* #5A9B7A */
-  --ink: oklch(0.16 0.01 60);                /* near black warm */
+  --ink: oklch(0.16 0.01 60);
   --ink-soft: oklch(0.28 0.01 60);
-  --cream: oklch(0.97 0.01 80);              /* light bg */
+  --cream: oklch(0.97 0.01 80);
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.16 0.01 60);
@@ -57,29 +59,30 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.16 0.01 60);
 
-  --primary: oklch(0.72 0.18 50);
+  --primary: oklch(0.78 0.19 150);
   --primary-foreground: oklch(0.99 0.005 80);
-  --secondary: oklch(0.65 0.10 155);
+  --secondary: oklch(0.72 0.18 50);
   --secondary-foreground: oklch(0.99 0.005 80);
 
-  --muted: oklch(0.96 0.005 70);
-  --muted-foreground: oklch(0.45 0.01 60);
-  --accent: oklch(0.94 0.02 60);
+  --muted: oklch(0.96 0.01 150);
+  --muted-foreground: oklch(0.45 0.02 150);
+  --accent: oklch(0.94 0.05 150);
   --accent-foreground: oklch(0.16 0.01 60);
 
   --destructive: oklch(0.6 0.2 25);
   --destructive-foreground: oklch(0.99 0.005 80);
 
-  --border: oklch(0.92 0.01 60);
-  --input: oklch(0.92 0.01 60);
-  --ring: oklch(0.72 0.18 50);
+  --border: oklch(0.92 0.02 150);
+  --input: oklch(0.92 0.02 150);
+  --ring: oklch(0.78 0.19 150);
 
-  /* Gradients & shadows */
-  --gradient-warm: linear-gradient(135deg, oklch(0.72 0.18 50) 0%, oklch(0.78 0.16 55) 100%);
+  /* Gradients & shadows — green-forward with orange highlight */
+  --gradient-warm: linear-gradient(135deg, oklch(0.78 0.19 150) 0%, oklch(0.58 0.16 150) 100%);
+  --gradient-fresh: linear-gradient(135deg, oklch(0.84 0.17 150) 0%, oklch(0.72 0.18 50) 100%);
   --gradient-ink: linear-gradient(180deg, oklch(0.18 0.01 60) 0%, oklch(0.11 0.01 60) 100%);
   --shadow-soft: 0 10px 30px -12px oklch(0.16 0.01 60 / 0.18);
-  --shadow-glow: 0 20px 60px -20px oklch(0.72 0.18 50 / 0.45);
-  --shadow-card: 0 1px 0 oklch(0.92 0.01 60), 0 12px 32px -16px oklch(0.16 0.01 60 / 0.15);
+  --shadow-glow: 0 20px 60px -20px oklch(0.78 0.19 150 / 0.5);
+  --shadow-card: 0 1px 0 oklch(0.92 0.02 150), 0 12px 32px -16px oklch(0.16 0.01 60 / 0.15);
 }
 
 @layer base {
