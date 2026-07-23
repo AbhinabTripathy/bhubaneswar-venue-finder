@@ -171,11 +171,13 @@ function About() {
 function Spaces() {
   const spaces = [
     {
-      img: space20, name: "20 Seater Space", price: "₹499", unit: "/hour",
+      img: space20Asset.url, name: "20 Seater Space", price: "₹600", unit: "/hour",
+      note: "Min. 3 hours",
       tags: ["Workshops", "Team Meetings", "Training", "Startup Discussions"],
     },
     {
-      img: space40, name: "40 Seater Space", price: "₹799", unit: "/hour",
+      img: space40Asset.url, name: "40 Seater Space", price: "₹900", unit: "/hour",
+      note: "Min. 2 hours",
       tags: ["Networking Events", "Seminars", "Product Launches", "Community Gatherings"],
     },
   ];
