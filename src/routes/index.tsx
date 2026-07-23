@@ -195,6 +195,7 @@ function Spaces() {
             </div>
             <div className="p-7">
               <h3 className="text-3xl">{s.name}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{s.note} · 9 AM – 9 PM</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {s.tags.map((t) => (
                   <span key={t} className="rounded-full bg-cream px-3 py-1 text-xs font-medium text-ink-soft">{t}</span>
