@@ -215,10 +215,17 @@ function Spaces() {
 /* ----------------------------- Pricing ----------------------------- */
 function Pricing() {
   const tiers = [
-    { name: "20 Seater", hourly: "499", daily: "2,999", highlighted: false },
-    { name: "40 Seater", hourly: "799", daily: "4,999", highlighted: true },
+    { name: "20 Seater", hourly: "600", min: "3 hours minimum", capacity: "Up to 20 guests", highlighted: false },
+    { name: "40 Seater", hourly: "900", min: "2 hours minimum", capacity: "Up to 40 guests", highlighted: true },
   ];
-  const perks = ["Projector Available", "WiFi Included", "Tea & Coffee", "Flexible Seating"];
+  const perks = ["WiFi Included", "Air Conditioning", "Flexible Seating", "9 AM – 9 PM"];
+  const addons = [
+    { name: "Projector", price: "₹600", note: "one-time" },
+    { name: "Speaker / Sound System", price: "₹400", note: "one-time" },
+    { name: "Tea", price: "₹20", note: "per cup · min. 5 cups" },
+    { name: "Coffee", price: "₹30", note: "per cup · min. 5 cups" },
+    { name: "Drinking Water (300 ml)", price: "₹200", note: "pack of 30 bottles" },
+  ];
   return (
     <Section id="pricing" eyebrow="Pricing" title="Honest rates. No surprises." dark>
       <div className="mt-14 grid gap-6 md:grid-cols-2">
@@ -237,11 +244,12 @@ function Pricing() {
               </span>
             )}
             <h3 className="text-3xl text-white">{t.name}</h3>
+            <p className="mt-1 text-white/60 text-sm">{t.capacity}</p>
             <div className="mt-6 flex items-baseline gap-2 text-white">
               <span className="font-display text-6xl">₹{t.hourly}</span>
               <span className="text-white/60">/hour</span>
             </div>
-            <div className="mt-2 text-white/70">or <span className="text-white">₹{t.daily}</span> / day</div>
+            <div className="mt-2 text-white/70">{t.min}</div>
             <ul className="mt-8 space-y-3">
               {perks.map((p) => (
                 <li key={p} className="flex items-center gap-3 text-white/85">
@@ -257,6 +265,30 @@ function Pricing() {
             </a>
           </div>
         ))}
+      </div>
+
+      <div className="mt-12 rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:p-10">
+        <div className="flex items-center justify-between gap-4 flex-wrap">
+          <div>
+            <h3 className="text-2xl text-white">Add-On Services</h3>
+            <p className="mt-1 text-white/60 text-sm">Optional extras to complete your setup</p>
+          </div>
+          <span className="rounded-full bg-[var(--green)]/15 px-3 py-1 text-xs font-semibold text-[var(--green)]">GST extra as applicable</span>
+        </div>
+        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+          {addons.map((a) => (
+            <li key={a.name} className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.02] px-5 py-4">
+              <div>
+                <div className="text-white font-medium">{a.name}</div>
+                <div className="text-white/55 text-xs">{a.note}</div>
+              </div>
+              <div className="text-[var(--orange)] font-display text-xl">{a.price}</div>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-6 text-xs text-white/50">
+          Operating hours: 9:00 AM – 9:00 PM · Additional hours charged at the applicable hourly rate · Subject to advance booking and availability.
+        </p>
       </div>
     </Section>
   );
