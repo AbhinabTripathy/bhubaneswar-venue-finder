@@ -4,8 +4,8 @@ import { toast } from "sonner";
 import { CheckCircle2, Loader2 } from "lucide-react";
 
 const RATES: Record<string, number> = {
-  "20 Seater": 499,
-  "40 Seater": 799,
+  "20 Seater": 600,
+  "40 Seater": 900,
 };
 
 function hoursBetween(start: string, end: string) {
