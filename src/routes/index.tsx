@@ -59,9 +59,9 @@ function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-ink text-white">
       <img
-        src={heroImg}
-        alt="Networking event at Urban Vibes Space"
-        className="absolute inset-0 h-full w-full object-cover opacity-60"
+        src={heroBg.url}
+        alt="Urban Vibes Space interior"
+        className="absolute inset-0 h-full w-full object-cover opacity-70"
         width={1920}
         height={1080}
       />
@@ -75,10 +75,11 @@ function Hero() {
             Bhubaneswar, Odisha
           </span>
           <h1 className="mt-6 font-display text-5xl leading-[1.02] text-balance md:text-7xl lg:text-8xl">
-            Connect.{" "}
-            <span className="italic text-[var(--orange)]">Create.</span>{" "}
-            Celebrate.
+            Urban Vibes Space
           </h1>
+          <p className="mt-4 font-display text-2xl italic text-[var(--orange)] md:text-3xl">
+            Connect. Create. Celebrate.
+          </p>
           <p className="mt-6 max-w-2xl text-lg text-white/80 text-pretty md:text-xl">
             Urban Vibes Space is Bhubaneswar's modern venue for meetings, workshops, networking
             events, photoshoots, content creation, and community gatherings.
