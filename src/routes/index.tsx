@@ -65,7 +65,7 @@ function Hero() {
         width={1920}
         height={1080}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/50 to-ink" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
       <div className="absolute -left-32 top-1/3 h-96 w-96 rounded-full bg-[var(--orange)]/30 blur-3xl" />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-5 pb-20 pt-36 md:px-8 md:pt-40">
